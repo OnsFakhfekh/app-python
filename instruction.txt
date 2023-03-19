@@ -1,0 +1,16 @@
+1)
+(app-python)docker build app-python .
+docker images
+2)
+(app-python)docker run -it sha256:9bc4a186f8d8b11686baacbfb4a5c4817d271845859f86214338ccea69758cf8
+docker ps -a
+3)
+(app-python)docker run -it --name c1-python 0091a11df6ea
+ docker start cont1-python
+4)
+(app-python)/(app-node)  docker container prune
+(app-python)/(app-node) docker image prune
+5)
+(app-python) docker build -t app-python:14 .
+6)
+ (app-python)docker run --rm --name cont2-node app-python
